@@ -1,0 +1,36 @@
+*
+    {
+        margin: 0%;
+        padding: 0%;
+    }
+
+body 
+    {
+        background-color: #000000;
+        color: #ffffff;
+        text-align: center;
+    }
+
+header, main, footer
+    {
+        display: block;
+    }
+
+#top
+    {
+        padding: 5%;
+    }
+
+#main li
+    {
+        display: inline-block;
+        list-style: none;
+        padding: 5%;
+    }
+
+#footer li
+    {
+        display: inline-block;
+        list-style: none;
+        padding: 5%;
+    }
