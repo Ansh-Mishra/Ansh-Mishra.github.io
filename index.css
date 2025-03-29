@@ -2,6 +2,7 @@
     {
         margin: 0%;
         padding: 0%;
+        filter: drop-shadow(1px 1px 1px #696969);
     }
 
 body 
@@ -18,6 +19,8 @@ header, main, footer
 
 #top
     {
+        font-size: 2rem;
+        font-size: clamp(2rem, 3vw, 3rem);
         padding: 5%;
     }
 
@@ -27,3 +30,14 @@ header, main, footer
         list-style: none;
         padding: 5%;
     }
+
+#main li:hover
+    {
+        transform: scale(1.25);
+    }
+
+#main
+    {
+        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 1.75vw, 2rem);
+    } 

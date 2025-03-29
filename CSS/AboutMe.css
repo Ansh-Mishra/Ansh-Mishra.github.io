@@ -2,6 +2,7 @@
     {
         margin: 0%;
         padding: 0%;
+        filter: drop-shadow(1px 1px 1px #696969);
     }
 
 body 
@@ -18,8 +19,16 @@ header, main, footer
 
 #top
     {
+        font-size: 2rem;
+        font-size: clamp(2rem, 3vw, 3rem);
         padding: 5%;
     }
+
+#main
+    {
+        font-size: 2rem;
+        font-size: clamp(2rem, 2.25vw, 3rem);
+    } 
 
 #main li
     {
@@ -28,9 +37,25 @@ header, main, footer
         padding: 5%;
     }
 
+#main li:hover
+    {
+        transform: scale(1.25);
+    }
+
+#footer
+    {
+        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 1.75vw, 2rem);
+    }      
+
 #footer li
     {
         display: inline-block;
         list-style: none;
         padding: 5%;
+    }
+
+#footer li:hover
+    {
+        transform: scale(1.25);
     }
