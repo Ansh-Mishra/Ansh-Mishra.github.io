@@ -1,8 +1,16 @@
 *
     {
         margin: 0%;
-        padding: 0%;
-        filter: drop-shadow(1px 1px 1px #696969);
+        padding: 0%;        
+    }
+
+a
+    {
+        text-decoration: none;
+        color: rgba(255,255,255,0.9);
+        letter-spacing: 0.5px;
+        padding: 0 20px;
+        transition: color 0.3s ease;  
     }
 
 body 
@@ -10,6 +18,7 @@ body
         background-color: #000000;
         color: #ffffff;
         text-align: center;
+        
     }
 
 header, main, footer
@@ -22,22 +31,24 @@ header, main, footer
         font-size: 2rem;
         font-size: clamp(2rem, 3vw, 3rem);
         padding: 5%;
+        
     }
 
 #main li
     {
+        
         display: inline-block;
         list-style: none;
         padding: 5%;
     }
-
 #main li:hover
     {
         transform: scale(1.25);
+        
     }
-
 #main
     {
         font-size: 1.5rem;
         font-size: clamp(1.5rem, 1.75vw, 2rem);
+        
     } 

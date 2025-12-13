@@ -1,0 +1,201 @@
+*
+    {
+        margin: 0%;
+        padding: 0%;
+    }
+
+.section-text 
+    {
+        animation: appear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+        margin: 40px 0;
+        font-size: larger;
+    }
+
+@media (max-width: 600px) 
+    {
+        .section-text 
+            {
+                font-size: medium;
+                margin: 24px 0;
+            }
+    }
+
+a
+    {
+        animation: appear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+        
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+        padding: 0 20px;
+        text-decoration: none;
+        color: #d1d1d1ec;
+        transition: color 0.3s ease;
+    }
+
+body 
+    {
+        background-color: #161616;
+        color: #ffffff;
+        text-align: center;
+    }
+
+header, main, footer
+    {
+        display: block;
+    }
+
+#top
+    {
+        font-size: 2rem;
+        font-size: clamp(2rem, 3vw, 3rem);
+        padding: 5%;
+    }
+
+#main ul 
+    {
+        margin-bottom: 50px; /* pushes video down */
+    }
+
+
+#footer
+    {
+        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 1.75vw, 2rem);
+    }    
+
+#footer li
+    {
+        display: inline-block;
+        list-style: none;
+        padding: 5%;
+    }
+
+#footer li:hover
+    {
+        transform: scale(1.25);
+    }
+
+/*appear animation*/
+@keyframes appear
+    {
+        from
+        {
+            opacity: 0;
+            scale: 0.5;
+        }
+        to
+        {
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+
+.video-container 
+    {
+        animation: appear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        aspect-ratio: 16 / 9;
+        margin: 0 auto;
+    }
+
+.video-container iframe 
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        border: 0;
+    }
+
+.carousel
+    {
+        width: 100vw;
+        max-width: 900px;
+        margin: 0 auto;
+        aspect-ratio: 16/9;
+        position: relative;
+        overflow: hidden;
+    }
+.carousel > ul
+    {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+.slide
+    {
+        position: absolute;
+        inset: 0;
+        opacity: 0;
+        transition: 200ms opacity ease-in-out;
+        transition-delay: 200ms;
+    }
+
+.slide > img
+    {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        background-color: black;
+        object-position: center;
+    }
+
+.slide[data-active]
+    {
+        z-index: 1;
+        opacity: 1;
+        transition-delay: 0;
+
+    }
+
+.carousel-button 
+    {
+        position: absolute;
+        z-index: 2;
+        background: none;
+        border: none;
+        font-size: 4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(255,255,255,0.5);
+        cursor: pointer;
+        border-radius: 0.25rem;
+        padding: 0 0.5rem;
+        background-color: rgba(0, 0, 0, 0.1);
+
+    }
+.carousel-button:hover, .carousel-button:focus
+    {
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+.carousel-button:focus
+    {
+        outline: 1px solid black;
+    }
+.carousel-button.prev
+    {
+        left: 1rem;
+    }
+.carousel-button.next
+    {
+        right: 1rem;
+    }
+iframe, video, canvas, .carousel, .carousel *
+    {
+        filter: none;
+    }

@@ -75,7 +75,7 @@ header, main, footer
         }
     }
 
-.art_item
+.webproject_item
     {
         animation: appear 2s linear;
         animation-timeline: view();
@@ -83,7 +83,7 @@ header, main, footer
         
     }
 
-.art_item:hover
+.webproject_item:hover
 {
     transform: scale(1.25);
 }
