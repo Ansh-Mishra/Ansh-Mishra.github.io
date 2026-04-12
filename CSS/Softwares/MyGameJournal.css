@@ -209,3 +209,17 @@ iframe, video, canvas, .carousel, .carousel *
         color:rgba(255,255,255,0.9);
         background: rgba(0,0,0,0.6);
     }
+
+
+.app_item
+{
+    animation: appear 2s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.app_item:hover
+    {
+        transform: scale(1.1);
+
+    }
